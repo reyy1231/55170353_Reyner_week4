@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  .login-card {
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+  }
+  .text{
+    font-size: 30px;
+  }
+}

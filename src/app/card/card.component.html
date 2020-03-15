@@ -1,0 +1,28 @@
+<mat-card>
+<div class="pokemon-card">
+  <div class="pokemon-avatar">
+    <h2>{{ pokemon.id }}</h2>
+  </div>
+  {{ pokemon.name }}<br />
+  {{ pokemon.firstType
+  }}<span *ngIf="pokemon.secondType">/{{ pokemon.secondType }}</span>
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+  <h3>Basic Status</h3>
+</mat-panel-title>
+</mat-expansion-panel-header>
+
+  HP: {{ pokemon.hp }}<br />
+  Attack: {{ pokemon.attack }}<br />
+  Defense: {{ pokemon.defense }}<br />
+
+</mat-expansion-panel>
+</mat-accordion>
+<button class="color" mat-flat-button (click)="detailClicked()">
+  <p>Detail</p>
+</button>
+  
+</div>
+</mat-card>

@@ -1,0 +1,13 @@
+<div>
+  <a class="nav-link" [routerLink]="['/dashboard']" routerLinkActive="active"
+    >Home</a
+  >
+  <a class="nav-link" [routerLink]="['/about']" routerLinkActive="active"
+    >About</a
+  >
+  
+</div>
+<button mat-button [matMenuTriggerFor]="menu">Extra</button>
+<mat-menu #menu="matMenu" class="editor">
+  <button (click)="logout()" class="editor">logout</button>
+</mat-menu>
